@@ -1,0 +1,26 @@
+﻿@model EMPLOYEEDAPPERMVC.Data.Models.Domain.TimeSelect?
+<input type="hidden" id="timeSlotId" value="@(Model?.Id ?? 0)" />
+<input type="hidden" id="employeeId" value="@(Model?.EmployeeId ?? 0)" />
+<input type="hidden" id="startTimeValue" value="@Model?.StartTime" />
+<input type="hidden" id="endTimeValue" value="@Model?.EndTime" />
+
+<div id="ValidationSummaryTimeSlot"></div>
+
+<div class="mb-2">
+    <label class="form-label">Employee</label>
+    <div id="selectEmployee"></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Start Time</label>
+    <div id="startTimeBox"></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">End Time</label>
+    <div id="endTimeBox"></div>
+</div>
+
+<div class="mt-3">
+    <button id="btnSaveTimeSlot" class="btn btn-success">Save</button>
+</div>

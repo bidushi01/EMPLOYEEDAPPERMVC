@@ -1,0 +1,41 @@
+﻿<input type="hidden" id="hiddenEmployeeId" value="@ViewBag.EmployeeId" />
+<input type="hidden" id="hiddenServiceId" value="@ViewBag.ServiceId" />
+<input type="hidden" id="hiddenBookingDate" value="@ViewBag.BookingDate" />
+<input type="hidden" id="hiddenStartTime" value="@ViewBag.StartTime" />
+<input type="hidden" id="hiddenEndTime" value="@ViewBag.EndTime" />
+
+<div id="ValidationSummary"></div>
+
+<div class="mb-2">
+    <label class="form-label">Service</label>
+    <div id="txtServiceName" data-value="@ViewBag.ServiceName"></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Date</label>
+    <div id="txtBookingDate" data-value="@ViewBag.BookingDate"></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Time</label>
+    <div id="txtTimeSlot" data-value="@ViewBag.TimeSlot"></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Your Name</label>
+    <div id="txtCustomerName" data-value=""></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Your Phone</label>
+    <div id="txtCustomerPhone" data-value=""></div>
+</div>
+
+<div class="mb-2">
+    <label class="form-label">Your Email</label>
+    <div id="txtCustomerEmail" data-value=""></div>
+</div>
+
+<div class="mt-3">
+    <button id="btnSaveBooking" class="btn btn-success">Book Now</button>
+</div>

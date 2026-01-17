@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    .hero-section {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('/Content/images/home-hero.png') center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        color: white;
+        font-size: 56px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .hero-content p {
+        color: white;
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .book-btn {
+        padding: 15px 50px;
+        background: rgba(255,255,255,0.2);
+        color: white;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+        .book-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+</style>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to Employee fast service</h1>
+        <p>Book your service today</p>
+        <a href="/ServiceBooking/DisplayAll" class="book-btn">BOOK NOW</a>
+    </div>
+</section>

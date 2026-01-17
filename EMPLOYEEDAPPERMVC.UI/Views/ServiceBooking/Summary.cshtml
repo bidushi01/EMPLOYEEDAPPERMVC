@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Service Booking Summary";
+}
+
+<h3>Service Booking Summary</h3>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label>Start Date</label>
+                <div id="startDateFilter"></div>
+            </div>
+            <div class="col-md-4">
+                <label>End Date</label>
+                <div id="endDateFilter"></div>
+            </div>
+            <div class="col-md-4">
+                <label>Service</label>
+                <div id="serviceFilter"></div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <button id="btnSearchSummary" class="btn btn-success">Search</button>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div id="bookingSummaryGrid"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/ServiceBookingSummary.js"></script>
+}
+
+
+
+
+
+
+
+
