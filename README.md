@@ -137,7 +137,6 @@ Some features that can be added in the future include:
 - User authentication and authorization
 - Email notifications
 - SMS appointment reminders
-- PDF report generation
 - Export data to Excel
 - Employee attendance management
 - Role-based access control
